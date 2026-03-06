@@ -165,6 +165,8 @@ O portfólio possui tema automático que:
 
 ### Front-end (Vercel)
 
+**Site publicado:** [https://portifolio-murex-chi-52.vercel.app](https://portifolio-murex-chi-52.vercel.app)
+
 1. Faça push do código para o GitHub
 2. Conecte o repositório na [Vercel](https://vercel.com)
 3. Configure as variáveis de ambiente na dashboard da Vercel
