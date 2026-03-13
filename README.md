@@ -58,31 +58,16 @@ As funcionalidades foram divididas em seções acessíveis por um menu de navega
 * **Ícones:** Lucide React
 * **Integração de E-mail:** EmailJS
 
-### 🖥️ Back-end (API de Suporte)
-* **Linguagem:** Java 17 (JDK)
-* **Framework:** Spring Boot 3.x
-* **Build Tool:** Maven
-
 ### ⚙️ Infraestrutura & Deploy
 * **Hospedagem Front-end:** Vercel
 * **Controle de Versão:** Git / GitHub
 
 ---
 
-## 🏗 Arquitetura
-
-O sistema segue uma arquitetura baseada em separação de responsabilidades (Client-Server):
-1. **Front-end (SPA):** Uma *Single Page Application* em React responsável por toda a interface, roteamento e consumo de serviços.
-2. **Back-end (API REST):** Uma API desenvolvida em Spring Boot para fornecer dados dinâmicos estruturados (ex: textos bilingues, lista de projetos) via formato JSON.
-
----
-
 ## 🔧 Instalação e Execução
 
 ### Pré-requisitos
-* **Java JDK:** Versão 17 ou superior
 * **Node.js:** Versão v18.x ou superior
-* **Maven:** Versão 3.9.x ou superior (ou use o wrapper `mvnw`)
 
 ### 🔑 Variáveis de Ambiente
 
@@ -111,21 +96,6 @@ npm run dev
 ```
 
 O frontend estará disponível em: `http://localhost:5173`
-
-### ▶️ Executando o Back-end
-
-```bash
-# Acesse a pasta do backend
-cd backend
-
-# Execute com o Maven Wrapper (Windows)
-./mvnw.cmd spring-boot:run
-
-# Ou no Linux/Mac
-./mvnw spring-boot:run
-```
-
-O backend estará disponível em: `http://localhost:8080`
 
 ---
 
@@ -172,14 +142,6 @@ O portfólio possui tema automático que:
 3. Configure as variáveis de ambiente na dashboard da Vercel
 4. O deploy será automático a cada push na branch `main`
 
-### Back-end
-
-O backend pode ser hospedado em serviços como:
-- Railway
-- Render
-- Heroku
-- AWS Elastic Beanstalk
-
 ---
 
 ## 📁 Estrutura de Pastas
@@ -204,15 +166,6 @@ portfolio-profissional/
 │   ├── package.json
 │   ├── vite.config.js
 │   └── tailwind.config.js
-├── backend/
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/com/portfolio/api/
-│   │       │   └── ApiApplication.java
-│   │       └── resources/
-│   │           └── application.properties
-│   ├── pom.xml
-│   └── mvnw / mvnw.cmd
 ├── docs/
 │   └── screenshots
 └── README.md
